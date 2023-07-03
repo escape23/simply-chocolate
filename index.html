@@ -52,8 +52,10 @@
               target="_blank"
               rel="noopener noreferrer"
               class="soc-link link"
-              >inst</a
-            >
+              ><svg class="header-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram-icon"></use>
+              </svg>
+            </a>
           </li>
           <li class="soc-item">
             <a
@@ -61,8 +63,10 @@
               target="_blank"
               rel="noopener noreferrer"
               class="soc-link link"
-              >twitt</a
-            >
+              ><svg class="header-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -76,14 +80,20 @@
             of pure delight!
           </h1>
           <div class="hero-buttons">
-            <button type="button" class="hero-btn">Buy now</button>
+            <button type="button" class="hero-btn" data-model-open>
+              Buy now
+            </button>
             <a href="#made" class="hero-link link">How it's made?</a>
-            <a href="#footer" class="hero-scroll-link link">scroll down</a>
+            <a href="#footer" class="hero-scroll-link link"
+              >scroll down<span
+                ><svg class="hero-scroll-icon" width="22" height="22">
+                  <use href="./images/icons.svg#angle-icon"></use></svg></span
+            ></a>
           </div>
         </div>
       </section>
       <!--Section 2: Benefits-->
-      <section class="benefits">
+      <section id="benefits" class="benefits">
         <div class="benefits-container container">
           <h2 hidden class="benefits-title">Benefits</h2>
           <ul class="benefits-list">
@@ -142,18 +152,93 @@
                 height=""
               />
               <h3 class="products-subtitle light">MILK CHOCOLATE</h3>
+              <div class="products-cover-block">
+                <p class="products-cover-title">Milk chocolate</p>
+                <div class="products-buttons">
+                  <button class="products-cover-button" type="button">
+                    chocolate
+                  </button>
+                  <a href="#benefits" class="products-cover-link link"
+                    >the benefits</a
+                  >
+                </div>
+                <p class="products-cover-text">
+                  Milk chocolate is a solid chocolate confectionery containing
+                  cocoa, sugar and milk. It is the most consumed type of
+                  chocolate. Chocolate was originally sold and consumed as a
+                  beverage in pre-Columbian times. Although four-fifths of all
+                  milk chocolate is sold in the United States and Europe.
+                </p>
+              </div>
             </li>
             <li class="products-item list">
               <img src="./images/milk.png" alt="milk" width="" height="" />
               <h3 class="products-subtitle">Milk</h3>
+              <div class="products-cover-block">
+                <p class="products-cover-title">Milk</p>
+                <div class="products-buttons">
+                  <button class="products-cover-button" type="button">
+                    milk
+                  </button>
+                  <a href="#benefits" class="products-cover-link link"
+                    >the benefits</a
+                  >
+                </div>
+                <p class="products-cover-text">
+                  Milk is a white liquid food produced by the mammary glands of
+                  mammals. It is the primary source of nutrition for young
+                  mammals (including breastfed human infants) before they are
+                  able to digest solid food.Early-lactation milk, which is
+                  called colostrum, contains antibodies that strengthen the
+                  immune system.
+                </p>
+              </div>
             </li>
             <li class="products-item list">
               <img src="./images/nuts.png" alt="nuts" width="" height="" />
               <h3 class="products-subtitle light">nuts</h3>
+              <div class="products-cover-block">
+                <p class="products-cover-title">Nuts</p>
+                <div class="products-buttons">
+                  <button class="products-cover-button" type="button">
+                    nuts
+                  </button>
+                  <a href="#benefits" class="products-cover-link link"
+                    >the benefits</a
+                  >
+                </div>
+                <p class="products-cover-text">
+                  Almonds, pistachios, and walnuts are some types of nuts that
+                  contain healthy nutrients. When eaten as part of a
+                  nutrient-dense diet, these 9 nuts may offer benefits such as
+                  reducing your risk of heart disease. They’re a good source of
+                  fiber, healthy fats, and plant protein. Plus, they’re great on
+                  their own.
+                </p>
+              </div>
             </li>
             <li class="products-item list">
               <img src="./images/caffe.png" alt="caffe" width="" height="" />
               <h3 class="products-subtitle">SEMI - SWEET CHOCOLATE</h3>
+              <div class="products-cover-block">
+                <p class="products-cover-title">semi - sweet chocolate</p>
+                <div class="products-buttons">
+                  <button class="products-cover-button" type="button">
+                    sweet chocolate
+                  </button>
+                  <a href="#benefits" class="products-cover-link link"
+                    >the benefits</a
+                  >
+                </div>
+                <p class="products-cover-text">
+                  Semi-sweet chocolate has a cocoa solid content of 35 to 65%.
+                  One of the best ways to gain an understanding of this type of
+                  chocolate is to compare it to a different type of chocolate.
+                  Semisweet is darker than milk chocolate. In a taste
+                  comparison, it has a slightly bitter taste whereas milk
+                  chocolate is sweeter and more mellow.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -217,12 +302,13 @@
           <h2 class="loved-title"><span>chocolate</span> is loved</h2>
           <ul class="loved-list list">
             <li class="loved-item">
-              <!-- <img
+              <img
                 src="./images/victoria.jpg"
                 alt="victoria"
                 width="80"
                 height="80"
-              /> -->
+                class="loved-image"
+              />
               <h3 class="loved-subtitle">Victoria Dobrzhanska</h3>
               <p class="loved-text">
                 I love this chocolate bar. Perfect combination of light crispy
@@ -230,12 +316,13 @@
               </p>
             </li>
             <li class="loved-item">
-              <!-- <img
+              <img
                 src="./images/nazar.jpg"
                 alt="nazar"
                 width="80"
                 height="80"
-              /> -->
+                class="loved-image"
+              />
               <h3 class="loved-subtitle">Nazar Babenko</h3>
               <p class="loved-text">
                 This chocolate confection is a delight! A delight! The wafer is
@@ -244,12 +331,13 @@
               </p>
             </li>
             <li class="loved-item">
-              <!-- <img
+              <img
                 src="./images/olena.jpg"
                 alt="olena"
                 width="80"
                 height="80"
-              /> -->
+                class="loved-image"
+              />
               <h3 class="loved-subtitle">Olena Kampusch</h3>
               <p class="loved-text">
                 Chocolate is a family favourite treat. Love the delicious smooth
@@ -306,5 +394,11 @@
         </nav>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-model>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-model-close>x</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
