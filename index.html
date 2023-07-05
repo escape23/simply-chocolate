@@ -80,7 +80,7 @@
             of pure delight!
           </h1>
           <div class="hero-buttons">
-            <button type="button" class="hero-btn" data-model-open>
+            <button type="button" class="hero-btn" data-modal-open>
               Buy now
             </button>
             <a href="#made" class="hero-link link">How it's made?</a>
@@ -394,9 +394,91 @@
         </nav>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-model>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-btn" data-model-close>x</button>
+        <button type="button" class="modal-btn" data-modal-close>
+          <svg class="close-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-x-close"></use>
+          </svg>
+        </button>
+        <p class="modal-text">
+          LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span>
+        </p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <div class="input-wrap">
+              <input
+                class="modal-input"
+                id="user-name"
+                name="user-name"
+                type="text"
+                required
+                placeholder="Name"
+              />
+              <svg class="modal-icon" width="24" height="24">
+                <use href="./images/icons.svg#user-icon"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <div class="input-wrap">
+              <input
+                class="modal-input"
+                id="user-email"
+                name="user-email"
+                type="email"
+                required
+                placeholder="Email"
+              />
+              <svg class="modal-icon" width="24" height="24">
+                <use href="./images/icons.svg#mail-icon"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <div class="input-wrap">
+              <input
+                class="modal-input"
+                id="user-tel"
+                name="user-tel"
+                type="tel"
+                required
+                placeholder="Phone number"
+              />
+              <svg class="modal-icon" width="24" height="24">
+                <use href="./images/icons.svg#phone-icon"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-textarea-box">
+            <textarea
+              class="modal-textarea"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+          <div class="modal-checkbox">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              class="input-check visually-hidden"
+              value="true"
+              checked
+            />
+            <label for="policy" class="check-text"
+              ><span>
+                <svg class="checkbox-icon" width="10" height="10">
+                  <use
+                    href="./images/icons.svg#icon-checkbox"
+                  ></use></svg></span
+              >I accept the terms and conditions of the
+              <a href="" class="check-link">Privacy Policy</a></label
+            >
+          </div>
+          <button class="send-button" type="button">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
